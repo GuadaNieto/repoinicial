@@ -1,0 +1,27 @@
+/* Diferentes maneras de dar estilos a nuestras etiquetas::
+Por elemento, tambien llamado etiquetas
+Por atributo de clase 
+
+*/
+
+*{
+margin: 0;
+padding: 0;
+}
+header{
+/*propiedade: valores*/
+    background-color: rgb(178, 87, 105);
+}
+header > nav{
+    text-align: center;
+}
+header >nav> a{
+color: rgb(212, 215, 156);
+text-decoration: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: xx-large;
+margin: 10px;
+}
+h1{
+    color: brown;
+}

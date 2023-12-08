@@ -1,0 +1,62 @@
+// Aplica a todos los elementos. Estos son estilos de reinicio comunes.
+* {
+    margin: 0; // Elimina los márgenes de todos los elementos
+    padding: 0; // Elimina el relleno de todos los elementos
+    box-sizing: border-box; // Cambia el modelo de caja para que el ancho y la altura incluyan el relleno y el borde
+  }
+  
+  // Estilos para el elemento <header>
+  header {
+    background-color: blueviolet; // Establece el color de fondo del encabezado
+  
+    // Estilos para el elemento <nav> dentro del <header>
+    nav {
+      text-align: center; // Centra el texto
+      display: flex; // Establece el display a flex para crear un contenedor flexible
+      justify-content: space-around; // Distribuye los elementos del contenedor de manera uniforme en la línea con espacio alrededor de ellos
+      flex-wrap: wrap; // Permite que los elementos se ajusten en varias líneas
+  
+      // Estilos para los elementos <a> dentro del <nav>
+      a {
+        color: white; // Establece el color del texto a blanco
+        font-family: Verdana, Geneva, Tahoma, sans-serif; // Establece la familia de fuentes
+        font-size: x-large; // Establece el tamaño de la fuente a extra grande
+        text-decoration: none; // Elimina la decoración del texto (por ejemplo, subrayados)
+  
+        // Estilos para el estado hover de los elementos <a>
+        &:hover {
+          color: black; // Cambia el color del texto a negro cuando se pasa el ratón por encima
+          text-decoration: underline; // Añade un subrayado cuando se pasa el ratón por encima
+        }
+      }
+    }
+  }
+  
+  // Estilos para el elemento <main>
+  main {
+    display: flex; // Establece el display a flex para crear un contenedor flexible
+    justify-content: space-around; // Distribuye los elementos del contenedor de manera uniforme en la línea con espacio alrededor de ellos
+    flex-wrap: wrap; // Permite que los elementos se ajusten en varias líneas
+  
+    // Estilos para los elementos con la clase .tarjetas dentro del <main>
+    .tarjetas {
+      width: 300px; // Establece el ancho de las tarjetas
+      padding: 15px; // Añade relleno alrededor de las tarjetas
+      border: 1px solid #ccc; // Añade un borde alrededor de las tarjetas
+      border-radius: 3px; // Redondea las esquinas del borde
+      margin-top: 3px; // Añade un margen en la parte superior de las tarjetas
+      transition: box-shadow 0.3px ease-in-out; // Añade una transición al box-shadow
+  
+      // Estilos para el estado hover de los elementos con la clase .tarjetas
+      &:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Añade una sombra cuando se pasa el ratón por encima
+      }
+  
+      // Estilos para los elementos <img> dentro de los elementos con la clase .tarjetas
+      img {
+        width: 100%; // Establece el ancho de las imágenes al 100% del contenedor
+        height: fit-content; // Establece la altura de las imágenes para que se ajuste al contenido
+      }
+    }
+  }
+  
